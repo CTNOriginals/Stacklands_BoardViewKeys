@@ -1,11 +1,8 @@
 ﻿using HarmonyLib;
-using System;
-using System.Collections;
-using UnityEngine;
 
 namespace BoardViewKeys;
 
-public class ExampleMod : Mod {
+public class Plugin : Mod {
 	public void Awake() {
 		Harmony.PatchAll();
 	}
