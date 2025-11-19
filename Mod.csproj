@@ -9,11 +9,15 @@
 	</PropertyGroup>
 	
 	<ItemGroup>
+		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" PrivateAssets="all" />
+	</ItemGroup>
+	
+	<ItemGroup>
 		<Reference Include="0Harmony">
 			<HintPath>$(stacklands)/Stacklands_Data/Managed/0Harmony.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="GameScripts">
+		<Reference Include="GameScripts" Publicize="true">
 			<HintPath>$(stacklands)/Stacklands_Data/Managed/GameScripts.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
@@ -37,11 +41,11 @@
 			<HintPath>$(stacklands)/Stacklands_Data/Managed/ShapesRuntime.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="SokLoc">
+		<Reference Include="SokLoc" Publicize="true">
 			<HintPath>$(stacklands)/Stacklands_Data/Managed/SokLoc.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="SokSheet">
+		<Reference Include="SokSheet" Publicize="true">
 			<HintPath>$(stacklands)/Stacklands_Data/Managed/SokSheet.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
