@@ -1,5 +1,7 @@
 .vscode
 *.csproj.user
+*.ai
+*.hlsl
 
 bin/
 obj/
